@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "type": "button",
+      "text": "Click me",
+      "color": "blue",
+      "size": "medium",
+      "action": "submit"
+    },
+    {
+      "type": "textfield",
+      "placeholder": "Enter your name",
+      "required": true
+    },
+    {
+      "type": "image",
+      "source": "https://example.com/image.jpg",
+      "alt": "Example Image"
+    },
+    {
+      "type": "radio",
+      "label": "Select an option",
+      "options": [
+        {
+          "label": "Option 1",
+          "value": "option1",
+          "dependentFields": [
+            {
+              "type": "textfield",
+              "label": "Additional Field 1",
+              "required": false
+            },
+            {
+              "type": "dropdown",
+              "label": "Select an item",
+              "options": [
+                "Item 1",
+                "Item 2",
+                "Item 3"
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Option 2",
+          "value": "option2",
+          "dependentFields": [
+            {
+              "type": "grid",
+              "rows": 3,
+              "columns": 2,
+              "headers": [
+                "Header 1",
+                "Header 2"
+              ],
+              "data": [
+                [
+                  "Data 1",
+                  "Data 2"
+                ],
+                [
+                  "Data 3",
+                  "Data 4"
+                ],
+                [
+                  "Data 5",
+                  "Data 6"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
