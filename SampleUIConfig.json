@@ -1,75 +1,95 @@
 {
-  "components": [
+  "fields": [
     {
-      "type": "button",
-      "text": "Click me",
-      "color": "blue",
-      "size": "medium",
-      "action": "submit"
-    },
-    {
+      "id": "1",
       "type": "textfield",
-      "placeholder": "Enter your name",
-      "required": true
+      "name": "Client Name",
+      "value": null,
+      "input_type":"text",
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": "^[a-zA-Z]+$",
+      "validation_message": "Please enter only alphabets",
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": null
+    },
+	{
+      "id": "2",
+      "type": "textfield",
+      "name": "ABN",
+      "value": null,
+      "input_type":"numeric",
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": "^[0-9]{11}$",
+      "validation_message": "Please enter 11 digit numbers",
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": null
     },
     {
-      "type": "image",
-      "source": "https://example.com/image.jpg",
-      "alt": "Example Image"
+      "id": "3",
+      "type": "checkbox",
+      "name": "Are you registered for GST?",
+      "value": null,
+	  "input_type":null,
+      "readonly": false,
+      "hidden": false,
+      "required": false,
+      "validation": null,
+      "validation_message": null,
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": [
+        "Yes",
+        "No"
+      ]
     },
     {
+      "id": "4",
       "type": "radio",
-      "label": "Select an option",
-      "options": [
-        {
-          "label": "Option 1",
-          "value": "option1",
-          "dependentFields": [
-            {
-              "type": "textfield",
-              "label": "Additional Field 1",
-              "required": false
-            },
-            {
-              "type": "dropdown",
-              "label": "Select an item",
-              "options": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Option 2",
-          "value": "option2",
-          "dependentFields": [
-            {
-              "type": "grid",
-              "rows": 3,
-              "columns": 2,
-              "headers": [
-                "Header 1",
-                "Header 2"
-              ],
-              "data": [
-                [
-                  "Data 1",
-                  "Data 2"
-                ],
-                [
-                  "Data 3",
-                  "Data 4"
-                ],
-                [
-                  "Data 5",
-                  "Data 6"
-                ]
-              ]
-            }
-          ]
-        }
+      "name": "Gender",
+      "value": null,
+	  "input_type":null,
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": null,
+      "validation_message": null,
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    {
+      "id": "5",
+      "type": "dropdown",
+      "name": "Country",
+      "value": null,
+	  "input_type":null,
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": null,
+      "validation_message": null,
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": [
+        "USA",
+        "Canada",
+        "UK",
+        "Australia"
       ]
     }
   ]
