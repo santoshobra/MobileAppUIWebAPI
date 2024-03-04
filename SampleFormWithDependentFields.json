@@ -1,0 +1,185 @@
+{
+  "id": 1,
+  "name": "Sample form",
+  "template_used": false,
+  "finalised": true,
+  "template_id": null,
+  "template_name": null,
+  "fields": [
+    {
+      "id": "1",
+      "type": "textfield",
+      "name": "Client Name",
+      "value": null,
+      "input_type": "text",
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": "^[a-zA-Z]+$",
+      "validation_message": "Please enter only alphabets",
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": null
+    },
+    {
+      "id": "2",
+      "type": "textfield",
+      "name": "ABN",
+      "value": null,
+      "input_type": "numeric",
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": "^[0-9]{11}$",
+      "validation_message": "Please enter 11 digit numbers",
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": null
+    },
+    {
+      "id": "3",
+      "type": "checkbox",
+      "name": "Are you registered for GST?",
+      "value": null,
+      "input_type": null,
+      "readonly": false,
+      "hidden": false,
+      "required": false,
+      "validation": null,
+      "validation_message": null,
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "4",
+      "type": "radio",
+      "name": "Gender",
+      "value": null,
+      "input_type": null,
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": null,
+      "validation_message": null,
+      "dependency": null,
+      "style": null,
+      "default_value": null,
+      "items": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    {
+      "id": "5",
+      "type": "dropdown",
+      "name": "Country",
+      "value": null,
+      "input_type": null,
+      "readonly": false,
+      "hidden": false,
+      "required": true,
+      "validation": null,
+      "validation_message": null,
+      "dependency": {
+        "options": {
+          "USA": {
+            "id": "country_option_1",
+            "type": "dropdown",
+            "name": "state",
+            "value": null,
+            "input_type": null,
+            "readonly": false,
+            "hidden": false,
+            "required": true,
+            "validation": null,
+            "validation_message": null,
+            "dependency": null,
+            "style": null,
+            "default_value": null,
+            "items": [
+              "New York",
+              "California",
+              "Texas"
+            ]
+          },
+          "Canada": {
+            "id": "country_option_2",
+            "type": "dropdown",
+            "name": "state",
+            "value": null,
+            "input_type": null,
+            "readonly": false,
+            "hidden": false,
+            "required": true,
+            "validation": null,
+            "validation_message": null,
+            "dependency": null,
+            "style": null,
+            "default_value": null,
+            "items": [
+              "Ontario",
+              "Quebec",
+              "British Columbia"
+            ]
+          },
+          "UK": {
+            "id": "country_option_3",
+            "type": "dropdown",
+            "name": "state",
+            "value": null,
+            "input_type": null,
+            "readonly": false,
+            "hidden": false,
+            "required": true,
+            "validation": null,
+            "validation_message": null,
+            "dependency": null,
+            "style": null,
+            "default_value": null,
+            "items": [
+              "England",
+              "Scotland",
+              "Wales"
+            ]
+          },
+          "Australia": {
+            "id": "country_option_4",
+            "type": "dropdown",
+            "name": "state",
+            "value": null,
+            "input_type": null,
+            "readonly": false,
+            "hidden": false,
+            "required": true,
+            "validation": null,
+            "validation_message": null,
+            "dependency": null,
+            "style": null,
+            "default_value": null,
+            "items": [
+              "New South Wales",
+              "Victoria",
+              "Queensland"
+            ]
+          }
+        }
+      },
+      "style": null,
+      "default_value": null,
+      "items": [
+        "USA",
+        "Canada",
+        "UK",
+        "Australia"
+      ]
+    }
+  ]
+}
