@@ -1,0 +1,108 @@
+{
+  "id": 1,
+  "name": "Sample form",
+  "template_used": false,
+  "finalised": true,
+  "template_id": null,
+  "template_name": null,
+  "sections": [
+    {
+      "section_id": 1,
+      "section_name": "Part 1—Client details",
+      "sub_sections": [
+        {
+          "section_id": 11,
+          "parent_section_id": 1,
+          "section_name": "Client 1",
+          "fields": [
+            {
+              "id": "1",
+              "type": "TextInput",
+              "name": "Client Name",
+              "value": null,
+              "input_type": "text",
+              "readonly": false,
+              "hidden": false,
+              "required": true,
+              "validation": "^[a-zA-Z]+$",
+              "validation_message": "Please enter only alphabets",
+              "dependency": null,
+              "place_holder": "Enter client name",
+              "style": null,
+              "default_value": null,
+              "items": null
+            },
+            {
+              "id": "2",
+              "type": "TextInput",
+              "name": "ABN",
+              "value": null,
+              "input_type": "numeric",
+              "readonly": false,
+              "hidden": false,
+              "required": true,
+              "validation": "^[0-9]{11}$",
+              "validation_message": "Please enter 11 digit numbers",
+              "dependency": null,
+              "place_holder": "Enter ABN",
+              "style": null,
+              "default_value": null,
+              "items": null
+            },
+            {
+              "id": "3",
+              "type": "CheckBox",
+              "name": "Are you registered for GST?",
+              "value": null,
+              "input_type": null,
+              "readonly": false,
+              "hidden": false,
+              "required": false,
+              "validation": null,
+              "validation_message": null,
+              "dependency": null,
+              "place_holder": null,
+              "style": null,
+              "default_value": null,
+              "items": ["Yes", "No"]
+            },
+            {
+              "id": "4",
+              "type": "RadioButton",
+              "name": "Gender",
+              "value": null,
+              "input_type": null,
+              "readonly": false,
+              "hidden": false,
+              "required": true,
+              "validation": null,
+              "validation_message": null,
+              "dependency": null,
+              "place_holder": null,
+              "style": null,
+              "default_value": null,
+              "items": ["Male", "Female", "Other"]
+            },
+            {
+              "id": "5",
+              "type": "DropDown",
+              "name": "Country",
+              "value": null,
+              "input_type": null,
+              "readonly": false,
+              "hidden": false,
+              "required": true,
+              "validation": null,
+              "validation_message": null,
+              "dependency": null,
+              "place_holder": null,
+              "style": null,
+              "default_value": null,
+              "items": ["USA", "Canada", "UK", "Australia"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
